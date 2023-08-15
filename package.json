@@ -29,6 +29,7 @@
     "build": "yarn clean && yarn compile",
     "test": "hardhat test ./test/contracts/**/*.ts ./test/contracts/periphery/**/*.ts ./test/contracts/USDC_quoteAsset/**/*.ts",
     "test:heavy": "hardhat test:heavy ./test/contracts/**/*.ts",
+    "test:straddle": "hardhat test ./test/contracts/Straddle/*.ts",
     "coverage": "NODE_OPTIONS=\"--max-old-space-size=4096\" hardhat coverage --temp artifacts --network hardhat  --testfiles \"./test/contracts/**/*.ts\"",
     "peripheryCoverage": "hardhat coverage --temp artifacts --network hardhat  --testfiles \"./test/contracts/periphery/**/*.ts\"",
     "integrationCoverage": "hardhat coverage --temp artifacts --network hardhat  --testfiles \"./test/contracts/gmx_integration/integrationTestsGMX.ts\"",
